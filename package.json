@@ -1,0 +1,22 @@
+{
+  "name": "kanaria",
+  "version": "1.0.0",
+  "description": "Hackaton Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashmadhwal/Kanaria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashmadhwal/Kanaria/issues"
+  },
+  "homepage": "https://github.com/yashmadhwal/Kanaria#readme",
+  "dependencies": {
+    "chart.js": "^3.6.0"
+  }
+}

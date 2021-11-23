@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+
+    /*Container*/
+    .container{
+        text-align: center;
+        color: #D84587;
+    }
+
+    .goBack{
+        display: flex;
+        justify-content: center;
+    }
+
+    </style>
+{% endblock %}
+
+{%block body%}
+<div class="container">
+    <h1>All statistic of Birds</h1>
+    <canvas id="myChart"></canvas>
+</div>
+<div class="goBack" style="margin-top:25px">
+    <a id='btn' class = 'buttonClass centerAlign' href="/">Main Page</a>
+</div>
+<script src="../static/javascript/chartjs_new.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs.js"></script> -->
+{% endblock %}
+
+<!-- Down Code is for non Flask Application-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>-->
+<!--    <link rel="icon" type="image/x-icon" href="../static/Images/Icons/favicon.ico">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--     <link href=" {{ url_for('static', filename = 'css/style.css')}}" rel="stylesheet" />-->
+<!--    <title>Kanaria Stats</title>-->
+<!--    <style>-->
+
+<!--    /*Container*/-->
+<!--    .container{-->
+<!--        text-align: center;-->
+<!--        color: #D84587;-->
+<!--    }-->
+
+<!--    .goBack{-->
+<!--        display: flex;-->
+<!--        justify-content: center;-->
+<!--    }-->
+
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <h1>All statistic of Birds</h1>-->
+<!--    <canvas id="myChart"></canvas>-->
+<!--</div>-->
+<!--<div class="goBack">-->
+<!--    <a id='btn' class = 'buttonClass centerAlign' href="/">Main Page</a>-->
+<!--</div>-->
+<!--<script src="../static/javascript/chartjs_new.js"></script>-->
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chartjs.js"></script>-->
+<!--</body>-->
+<!--</html>-->

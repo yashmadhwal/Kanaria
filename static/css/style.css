@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
+*{
+    /* border: 1px black solid; */
+    font-family: 'Cinzel', serif;
+}
+
+html {
+    margin:    0 auto;
+    max-width: 1366px;
+}
+
+.gap{
+    width:10px;
+}
+.centerAlign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10px 10px 10px;
+}
+#HeaderLogo{
+
+}
+
+#Logo{
+    height: 50px;
+    width: auto;
+}
+
+h1{
+    color: black;
+    letter-spacing: 3px;
+    
+}
+
+button{
+    background-color: black;
+    color:White;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.buttonClass{
+    background-color: black;
+    color:White;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+button:hover{
+    cursor: pointer;
+}
+
+/* banner */
+#central_banner img{
+    margin-top: 30px;
+    width:100%;
+}
+
+/* Search Area */
+
+#Bird{
+    width: 275px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#header_two{
+    margin-top: 20px;
+    width: auto;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#searchBar{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sendMessageButton{
+    border: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 60px;
+    background: url(../Images/Landing_Page/Button.png) no-repeat center;
+    /* border: none; */
+    background-size: contain;
+}
+
+input{
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+/* Modal Screen */
+.modal-container{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 10;
+    /* opacity: 1;  */
+    /*opacity: 0;*/
+    /*pointer-events: none; !* click the butto*!*/
+}
+
+/*.modal-container.show{*/
+/*    opacity: 1;*/
+/*    pointer-events: auto;*/
+/*}*/
+
+.modal{
+    background-color: white;
+    
+    width: 800px;
+    max-width:100%; /* To keep within the screen */
+    border-radius: 5px;
+    padding: 30px 50px;
+    text-align: center; /* This will get everything in center inside*/
+}
+
+.modal h1{
+    margin: 0;
+}
+
+.modal p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Bird Information */
+#BirdInformation{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bdinfo div{
+    height: 100%;
+    width: 100%;
+}
+
+.bdinfo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+#Birdpicture{
+    width: 220px;
+    height: auto;
+}
+
+#Information{
+    width: 500px;
+    display: flex;
+}
+h3{
+    margin: 5px;
+    margin-bottom: 0px;
+}
+
+.scoreRank{
+    display: flex;
+}
+
+.score{
+    font-family: 'Revalia', cursive;
+    text-decoration: none;
+}
+
+.rank{
+    font-family: 'Revalia', cursive;
+}
+
+.ScoreRankValue{
+    font-family: 'Graduate', cursive;
+}
+
+.BirdInformation div{
+    height: 100%;
+    width: 100%;
+}   
+
+.THE h3{
+    text-decoration: underline;
+}
+
+.THE{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+#OverAll{
+    font-size: 40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+a#btnBack{
+    margin: auto;
+}
+#btnBack:hover{
+    cursor:pointer;
+}
+
+/*Footer*/
+
+footer {
+    position: fixed;
+    /* position: absolute; */
+    /* max-width: 1366px; */
+    /* heigh t: 70px; */
+    background-color: black;
+    bottom: 8px;
+    left: 0px;
+    right: 0px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+
+@media (min-width: 769px)  {
+    #FooterContent{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 35%;
+        margin:auto;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px)  {
+    #FooterContent{
+        display: flex; 
+        flex-wrap: wrap;
+        margin:auto;
+      justify-content: space-between;
+    }
+}
+
+#FooterContent img{
+    height: 30px;
+    width: 30px;
+}
+
+.filter img{
+    filter: invert(1);
+}
+
+.iconClass{
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+    border: 1px black solid;
+    
+}
+
+#CopyRightsArea{
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=" {{ url_for('static', filename = 'css/style.css')}}" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../static/Images/Icons/favicon.ico">
+    {%block head%}
+
+    {% endblock %}
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Kanaria Ranking</title>
+</head>
+
+<body>
+    {%block mainbody%}
+    {%block body%}
+
+    <div id="header">
+        <div id="HeaderLogo" class='centerAlign'>
+            <!-- <img src="../static/Images/Landing_Page/Logo.png" alt="Logo" id="Logo"> -->
+            <img src="../static/Images/Icons/Screenshot 2021-11-23 at 15.52.10.png" alt="Logo" id="Logo">
+        </div>
+
+        <div id="Stats" class="centerAlign">
+
+            <a id='btn' class='buttonClass centerAlign' href="/allStats">All Stats</a>
+
+        </div>
+    </div>
+
+    <div id="central_banner">
+        <img src="../static/Images/Landing_Page/Catalogue.png" alt="" id='banner'>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="header_two">
+        Rarity Score of Bird
+    </div>
+
+    {% block information %}
+    <form action="" method="POST">
+        <div id="searchBar" class="centerAlign">
+
+            <input id='Bird' placeholder="Enter Bird Id" maxlength="4" pattern="^[0-9]{}$" name='bird_number' required>
+            <button type="submit" id="sendMessageButton"></button>
+
+        </div>
+    </form>
+    {% endblock %}
+
+    {% endblock %}
+    {%block footer%}
+    <!-- <footer> -->
+
+    <footer>
+        <div class="" id='FooterArea'>
+            <div id="FooterContent">
+                <a target="_blank" href="https://github.com/yashmadhwal/Kanaria" class='iconClass filter'>
+                    <img src="../static/Images/Icons/github.png" alt="Github">
+                </a>
+                <a target="_blank" href="https://medium.com/@yashmadhwal/kanaria-hackathon-project-c567a7bd2c79"
+                    class='iconClass filter'>
+                    <img src="../static/Images/Icons/medium.png" alt="Medium">
+                </a>
+                <a target="_blank" href="https://t.me/yashmadhwal" class='iconClass filter'>
+                    <img src="../static/Images/Icons/telegram.png" alt="Telegram">
+                </a>
+                <a target="_blank" href="https://kanaria.rmrk.app/" class='iconClass'>
+                    <img src="../static/Images/Icons/Button.png" alt="Kanaria">
+                </a>
+                <a target="_blank" href="mailto:info@example.com" class='iconClass filter'>
+                    <img src="../static/Images/Icons/email.png" alt="email">
+                </a>
+            </div>
+            <div id="CopyRightsArea">
+                © 2021 Kanaria Hackathon Project. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    {%endblock%}
+    {%endblock%}
+    <script src="{{url_for('static', filename='javascript/js.js')}}"></script>
+    <!-- <script src="../static/javascript/js.js"></script> -->
+</body>
+
+</html>

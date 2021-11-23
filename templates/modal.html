@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block information %}
+
+<!--<p>Hello World</p>-->
+
+<div class='modal-container' id='modal_container'>
+    <div class="modal">
+        <h1>Bird Number: <span class="ScoreRankValue">{{BirdInfo}}</span></h1>
+        <div id="BirdInformation" class='bdinfo centerAlign'>
+            <div id="Birdpicture" class='BirdInformation'>
+<!--                <img src="../static/Images/Modal/0004.png" alt="">-->
+                <img src="../static/jpgs/{{bird_image}}.jpg" alt="{{bird_image}}">
+
+            </div>
+
+            <div id="Information" class='BirdInformation'>
+                <div id="TraitsHarmonyEdition">
+                    <div id="Traits" class='THE'>
+                        <h3>Traits</h3>
+                        <div class="scoreRank centerAlign">
+                            <div class="score">Score
+                                <div class="ScoreRankValue">{{T_score}}</div>
+                            </div>
+                            <div class="rank">Rank
+                                <div class="ScoreRankValue">{{T_rank}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Harmony" class='THE'>
+                        <h3>Set</h3>
+                        <div class="scoreRank centerAlign">
+                            <div class="score">Score
+                                <div class="ScoreRankValue">{{H_score}}</div>
+                            </div>
+                            <div class="rank">Rank
+                                <div class="ScoreRankValue">{{H_rank}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Edition" class='THE'>
+                        <h3>Edition</h3>
+                        <div class="scoreRank centerAlign">
+                            <div class="score">Score
+                                <div class="ScoreRankValue">{{E_score}}</div>
+                            </div>
+                            <div class="rank">Rank
+                                <div class="ScoreRankValue">{{E_rank}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="OverAllStats">
+                    <div id='OverAll' class='THE centerAlign'>Over All Score</div>
+                    <div class="scoreRank THE centerAlign">
+                        <div class="score">Score
+                            <div class="ScoreRankValue">{{OA_score}}</div>
+                        </div>
+                        <div class="rank">Rank
+                            <div class="ScoreRankValue">{{OA_rank}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id='btnBack' class = 'buttonClass centerAlign' href="/">Go Back</a>
+
+    </div>
+</div>
+
+{% endblock %}

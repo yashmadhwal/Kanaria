@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block information %}
+
+<!--<p>Hello World</p>-->
+
+<div class='modal-container' id='modal_container'>
+    <div class="modal">
+        <h1>Opps! No bird <span class="ScoreRankValue">{{BirdInfo}}</span> Exist</h1>
+        <div id="BirdInformation" class='bdinfo centerAlign'>
+
+        <a id='btnBack' class = 'buttonClass centerAlign' href="/">Go Back</a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

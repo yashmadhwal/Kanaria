@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{%block head%}
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+    #errorGif {
+        display: flex;
+        justify-content: center;
+    }
+
+    #errorMessage{
+        font-family: 'Dosis', sans-serif;
+        font-size: 70px;
+        margin-top: 20px;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+
+    .main{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+{% endblock %}
+{%block mainbody%}
+    <div id="errorGif">
+        <img src="../static/Images/Icons/404_error.gif" alt="Error Image" width='400px' />
+    </div> 
+    <div id="errorMessage">
+        404: Page not found!!
+    </div> 
+    <div class="main">
+        <a id='btn' class = 'buttonClass centerAlign' href="/">Main Page</a>
+    </div>
+    
+{% endblock %}
