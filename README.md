@@ -10,3 +10,4 @@ The data mining and machine learning parts are performed in IPython and notebook
 * FitWeights: fits the best combination of traits, sets, and edition scores to trade data
 * GetJPEGCollections: downloads all the birds' images.
 
+You need RMRK 2 consolidated dump (see https://docs.rmrk.app/syncing/#consolidation) named as 'rmrk20211118.json' in the same folder with notebooks to run notebooks one-by-one.
