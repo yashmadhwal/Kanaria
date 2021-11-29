@@ -89,9 +89,9 @@ def modal(BirdInformation):
                 """ function(int(BirdInfo),BirdInfo)
 
                 T_score, T_rank, H_score, H_rank, E_score, E_rank, OA_score, OA_rank = function(int(BirdInfo),BirdInfo) """
-                T_score = str(round(df.loc[df['bird_id'] == BirdInfo]['trait_score'][bird_row],2))
+                T_score = str(round(df.loc[df['bird_id'] == BirdInfo]['trait_score'][bird_row],4))
                 T_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['trait_rank'][bird_row],2))
-                H_score = str(round(df.loc[df['bird_id'] == BirdInfo]['set_score'][bird_row],2))
+                H_score = str(round(df.loc[df['bird_id'] == BirdInfo]['set_score'][bird_row],4))
                 H_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['set_rank'][bird_row],2))
 #                 E_score = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_score'][bird_row],2))
 #                 E_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_rank'][bird_row],2))
