@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yashmadhwal/Kanaria#readme",
   "dependencies": {
-    "chart.js": "^3.6.0"
+    "chart.js": "^3.6.0",
+    "chartjs-plugin-zoom": "^1.2.0"
   }
 }
