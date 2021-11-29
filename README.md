@@ -1,5 +1,4 @@
 # KRAMER — Kanaria RArity MEteR
-
 by Yash Madhwal, Osoiotoko and Yury Yanovich for RMRKable Hacktoberfest
 
 The data mining and machine learning parts are performed in IPython and notebooks are in the IPython folder. Namely, 
@@ -14,3 +13,38 @@ The data mining and machine learning parts are performed in IPython and notebook
 
 You need RMRK 2 consolidated dump (see https://docs.rmrk.app/syncing/#consolidation) named as 'rmrk20211118.json' in the same folder with notebooks to run notebooks one-by-one.
 
+### Recreating Project
+Prerequisites:
+- [Python](https://www.python.org/) 3.7 or later
+- [Node](https://nodejs.org/en/download/)
+
+## Installation
+
+[![Test](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+1. Clone repository, In terminal: 
+    ```
+    git clone https://github.com/yashmadhwal/Kanaria.git
+    ```
+2.  Install and Create virtual environment
+    ```
+    pip install virtualenv
+    virtualenv venv
+    ```
+3. Activate environment
+    ```
+    source venv/bin/activate
+    ```
+4. Install dependencies and requirements
+    ```
+    npm i
+    pip install -r requirements.txt
+    ```
+5. Run the project
+    ```
+    python app.py
+    ```
+6. After exploring, deactivate by running following command in a seperate terminal
+    ```
+    deactivate
+    ```
