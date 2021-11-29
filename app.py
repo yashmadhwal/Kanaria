@@ -95,7 +95,7 @@ def modal(BirdInformation):
                 H_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['set_rank'][bird_row],2))
 #                 E_score = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_score'][bird_row],2))
 #                 E_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_rank'][bird_row],2))
-                OA_score = str(round(df.loc[df['bird_id'] == BirdInfo]['weighted_score'][bird_row],2))
+                OA_score = str(round(df.loc[df['bird_id'] == BirdInfo]['week_trade_score'][bird_row],4))
                 OA_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['weighted_rank'][bird_row],2))
 
                 return render_template('modal.html',BirdInfo = BirdInformation,
