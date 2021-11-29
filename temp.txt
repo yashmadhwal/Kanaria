@@ -1,5 +1,0 @@
-Currently:
-we have 1 graph (for now line and then we need to change it to Scatter,....) and reduce the dot size. Suxh
-
-Next:
-based on this information, We want bird id is range: 1-9,10-99, 99

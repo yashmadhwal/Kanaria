@@ -1,18 +1,5 @@
-/static/jpgs_2
+
 /static/jpgs
-/static/jpgs
 
-/static/Data/birds_dataset_with_ranks.csv
-
-/static/Data/birds_dataset_with_ranks.xls
-
-/static/Data/birds_dataset_with_ranks_new.numbers
-
-/env/
-/IPython/
-
-/temp.txt
-
-/Untitled_YY_YM.ipynb
-
-/UntitledYY.ipynb
+env/
+IPython/
