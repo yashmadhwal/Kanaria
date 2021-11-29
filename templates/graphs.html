@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {%block head%}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <style>
@@ -17,6 +18,18 @@
         justify-content: center;
     }
 
+    .item {
+            padding: 8px;
+            margin: 10px;
+            border-radius: 5px;
+            /* color: white; */
+            border-style: solid ;
+            border-width: 3px;
+            cursor: pointer;
+            /*font-size: 0;*/
+            letter-spacing: 0;
+        }
+
     </style>
 {% endblock %}
 
@@ -24,7 +37,16 @@
 <div class="container">
     <h1>All statistic of Birds</h1>
     <canvas id="myChart"></canvas>
+
+    <div class="legendbox">
+        <button id="1_9" onclick="toggleData(0)" class='item'>Super founder</button>
+        <button id="10_99" onclick="toggleData(1)" class='item'>Founder</button>
+        <button id="100_999" onclick="toggleData(2)" class='item'>Rare</button>
+        <button id="1000_9999" onclick="toggleData(3)" class='item'>Limited edition</button>
+    </div>
+
 </div>
+
 <div class="goBack" style="margin-top:25px">
     <a id='btn' class = 'buttonClass centerAlign' href="/">Main Page</a>
 </div>

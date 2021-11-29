@@ -22,12 +22,12 @@ def returnBirdRow(bird_id):
     else:
         return None
 
-df = pd.read_excel('static/Data/birds_dataset_with_ranks.xls')
+df = pd.read_excel('static/Data/birds_dataset_with_ranks_new.xlsx')
 
 birds_dataset_with_ranks = list()
-int_columns = [0, -1, -3, -5, -7]
-numeric_columns = [-2, -4, -6, -8]
-with open('static/Data/birds_dataset_with_ranks.csv') as csv_file:
+int_columns = [-3, -5, -7, -9]
+numeric_columns = [0, -1, -2, -4, -6, -8]
+with open('static/Data/birds_dataset_with_ranks_new.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=';')
     line_count = 0
     for row in csv_reader:
@@ -43,6 +43,7 @@ with open('static/Data/birds_dataset_with_ranks.csv') as csv_file:
             birds_dataset_with_ranks.append(row)
             line_count += 1
     print(f'Processed {line_count} lines.')
+
 
 
 # Making the flask Application
@@ -64,6 +65,15 @@ def home():
 def modal(BirdInformation):
     try:
         BirdInfo = int(BirdInformation)
+        if BirdInfo<=9:
+            birdCatergory = 'Super Founder'
+        elif 100 > BirdInfo >= 10 :
+            birdCatergory = 'Founder'
+        elif 1000 > BirdInfo >= 100 :
+            birdCatergory = 'Rare'
+        elif 10000 > BirdInfo >= 1000 :
+            birdCatergory = 'Limited Edition'
+
         bird_row = returnBirdRow(BirdInfo)
 
         
@@ -81,10 +91,10 @@ def modal(BirdInformation):
                 T_score, T_rank, H_score, H_rank, E_score, E_rank, OA_score, OA_rank = function(int(BirdInfo),BirdInfo) """
                 T_score = str(round(df.loc[df['bird_id'] == BirdInfo]['trait_score'][bird_row],2))
                 T_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['trait_rank'][bird_row],2))
-                H_score = str(round(df.loc[df['bird_id'] == BirdInfo]['harmony_score'][bird_row],2))
-                H_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['harmony_rank'][bird_row],2))
-                E_score = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_score'][bird_row],2))
-                E_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_rank'][bird_row],2))
+                H_score = str(round(df.loc[df['bird_id'] == BirdInfo]['set_score'][bird_row],2))
+                H_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['set_rank'][bird_row],2))
+#                 E_score = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_score'][bird_row],2))
+#                 E_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_rank'][bird_row],2))
                 OA_score = str(round(df.loc[df['bird_id'] == BirdInfo]['weighted_score'][bird_row],2))
                 OA_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['weighted_rank'][bird_row],2))
 
@@ -94,8 +104,9 @@ def modal(BirdInformation):
                                                     T_rank = T_rank,
                                                     H_score = H_score,
                                                     H_rank = H_rank,
-                                                    E_score = E_score,
-                                                    E_rank = E_rank,
+#                                                     E_score = E_score,
+#                                                     E_rank = E_rank,
+                                                    bird_Catergory = birdCatergory,
                                                     OA_score = OA_score,
                                                     OA_rank = OA_rank)
 
