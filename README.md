@@ -20,8 +20,6 @@ Prerequisites:
 
 ## Installation
 
-[![Test](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 1. Clone repository, In terminal: 
     ```
     git clone https://github.com/yashmadhwal/Kanaria.git
