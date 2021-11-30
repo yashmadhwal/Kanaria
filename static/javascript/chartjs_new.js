@@ -25542,18 +25542,18 @@ const myChart = new Chart(ctx, {
                         // console.log(tooltipItem.dataIndex);
                         var Row_Id = myChart.data.datasets[tooltipItem.datasetIndex].data[tooltipItem.dataIndex].x;
                         // return `Row Id` +Row_Id;
-                        return `Bird_ID:` + myChart.data.labels[Row_Id];
+                        return `Bird_ID: ` + myChart.data.labels[Row_Id];
                     },
                     label: function (tooltipItem, data) {
                         // console.log(tooltipItem.dataIndex);
                         var Row_Id = myChart.data.datasets[tooltipItem.datasetIndex].data[tooltipItem.dataIndex].x;
                         // return `Row Id` +Row_Id;
-                        return `Rank:   ` + bird_rank[Row_Id];
+                        return `Rank:    ` + bird_rank[Row_Id];
                     },
                     afterLabel: function (tooltipItem, data) {
                         var score = myChart.data.datasets[tooltipItem.datasetIndex].data[tooltipItem.dataIndex].y;
                         // return `Row Id` +Row_Id;
-                        return `Score:  ` + score;
+                        return `Score:   ` + score;
                     },
                 }
             },
