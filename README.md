@@ -29,7 +29,7 @@ Prerequisites:
     pip install virtualenv
     virtualenv venv
     ```
-3. Activate environment
+3. Activate environment ([Read more](https://docs.python.org/3/library/venv.html))
     ```
     source venv/bin/activate
     ```
