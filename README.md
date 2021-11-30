@@ -48,3 +48,4 @@ Prerequisites:
     ```
     deactivate
     ```
+**Note:** _On cloning the repository, please note that the bird's image will not be available (as it does not exist in the repository because the file exceeds more than 1Gb), but instead alternative text will appear that will indicate bird's ID. Use [`GetJPEGCollections`](https://github.com/yashmadhwal/Kanaria/blob/main/IPython/CompressJPEGs.ipynb) to downloads all the birds' images. After downloading, save at `/Kanaria/static/` as `jpgs`._
