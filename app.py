@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import pandas as pd
+import numpy as np
 import csv
 
 # Function to get birdrow and bird Id
@@ -96,7 +97,7 @@ def modal(BirdInformation):
 #                 E_score = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_score'][bird_row],2))
 #                 E_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['edition_rank'][bird_row],2))
                 OA_score = str(round(df.loc[df['bird_id'] == BirdInfo]['week_trade_score'][bird_row],4))
-                OA_rank = str(round(df.loc[df['bird_id'] == BirdInfo]['weighted_rank'][bird_row],2))
+                OA_rank = np.sum(df.loc[df['bird_id'] == BirdInfo]['week_trade_score'][bird_row] < df['week_trade_score']) + 1
 
                 return render_template('modal.html',BirdInfo = BirdInformation,
                                                     bird_image = BirdInformation,
