@@ -25495,7 +25495,7 @@ const myChart = new Chart(ctx, {
             },
             y: {
                 title: {
-                    text: 'Weighted Score',
+                    text: 'Market Score',
                     display: true
                 },
                 grid: {
